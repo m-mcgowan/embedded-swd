@@ -1,4 +1,4 @@
-
+#pragma SPARK_NO_PREPROCESSOR
 #include "swd/swd.h"
 
 SYSTEM_MODE(MANUAL);
