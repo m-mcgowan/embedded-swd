@@ -1,5 +1,9 @@
 install: 
- - npm install particle-cli 
+- npm install particle-cli 
+- mkdir -p ~/.particle
+- openssl aes-256-cbc -K $encrypted_6989991efb3b_key -iv $encrypted_6989991efb3b_iv
+  -in particle.config.json.enc -out particle.config.json -d
+- mv particle.config.json ~/.particle/
 
 build: "./ci/build.sh"
 deploy:
@@ -11,8 +15,3 @@ deploy:
   on:
     tags: true
 
-before_install:
-- mkdir -p ~/.particle
-- openssl aes-256-cbc -K $encrypted_6989991efb3b_key -iv $encrypted_6989991efb3b_iv
-  -in particle.config.json.enc -out particle.config.json -d
-- mv particle.config.json ~/.particle/
