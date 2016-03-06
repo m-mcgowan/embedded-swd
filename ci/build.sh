@@ -15,6 +15,6 @@ fi
 
 for p in photon p1 electron
 do
-  particle compile $p firmware --saveTo dist/Norwegian_Blue_$p$suffix.bin
+  particle compile $p firmware --saveTo dist/norwegian_blue_$p$suffix.bin
 done
 
