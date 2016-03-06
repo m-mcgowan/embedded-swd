@@ -48,7 +48,7 @@ The simplest way is to use the Particle WebIDE:
 - Click "Use this example"
 - Click "Flash" to flash the example to your device
  
-Alternatively, you can download the latest release for your programmer device from the [Releases](./releases) page on GitHub. 
+Alternatively, you can download the latest release for your programmer device from the [Releases](https://github.com/m-mcgowan/embedded-swd/releases) page on GitHub. 
 
 Once the app has been flashed, the device will breathe white - it doesn't connect to the cloud or use Wi-Fi. 
  
@@ -76,7 +76,9 @@ The library has some useful parts that may be generally useful:
 - An implementation of the MEM_AP port
 - A flash memory binding for the STM32F2xx that allows flash operations to be performed. (This is presently limited to reflashing the bootloader.)
 
+By resuing this, you'll save yourself a few hours staring at a logic analyser... :-)
 
+![SWD Logic](swd_logic.png)
 
 
 
