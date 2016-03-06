@@ -12,7 +12,10 @@ deploy:
   provider: releases
   api_key:
     secure: skOGKYEoQ8kQ2lmgPEZ+BhWdNO3FhFSrZ6XHFFysfiUuO3rUutqWAOWHBuydSkyDzbwCfet5ECZ68EbPVckichgOBeBsFWR6lVunrQmos6DwfEj6hSaY0gBbeR+pCq3E+mkr8ICErhZQTUSGxC3LGAUuXKk3k6cOvZJ/8xbzay+SKpvCZ1QKLTwIxawHSrqenM7CVRLe4cxxh6R628D/Bg2sRN9iN4HwvGh/1cC3bAlgSHsUWl4qKLzoh3sQoSpXHjbd1u4KPlCST2hSHyJpRtLh3tNBarL5F1VwMT7zavONeO2/1e7L4rFph4AcpQzMSCkIWTXcLijVdM22Qa03lZelJujyKhZ0f9aGYxjuzTQqD0zOSi/Z4pbdvVqoXFiCOF6NbMfN14Hc1YjyK3ez6BPRYyj9LPxXPsUD3tt9zUYYpQW+aJdM+dsolH+G9fucKGobWIpJ28CnFW1GE3ZVipRHhju3UcMEqxx0UmIZ8VAhYk8mIPeFElsQF5EavbqvOb8aP3aMiHAcKjp4YWT8McyzT3YX7MOh+A3yxPERyzbWKzPiK8KqcAtwvamiR/MN0YEXJ5QTsYmNywaJNvXzOcvhQ9P+llUiftFoy/86+8exiA/FbTUjeC9q4Hv2Bf2RusqcavoECqNhq3H7VauLsZMG0du8KbJbFVqnEAuwdv8=
-  file: dist/norwegian_blue_photon.bin dist/norwegian_blue_p1.bin dist/norwegian_blue_electron.bin
+  file: 
+   - dist/norwegian_blue_photon.bin 
+   - dist/norwegian_blue_p1.bin 
+   - dist/norwegian_blue_electron.bin
   skip_cleanup: true
   on:
     tags: true
