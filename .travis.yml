@@ -6,7 +6,7 @@ install:
 - mv particle.config.json ~/.particle/
 
 script: 
-./ci/build.sh
+- ./ci/build.sh
 
 deploy:
   provider: releases
