@@ -1,4 +1,7 @@
-install: npm install particle-cli ./ci/login-cli.sh
+install: 
+ - npm install particle-cli 
+ - ./ci/login-cli.sh
+
 build: "./ci/build.sh"
 deploy:
   provider: releases
