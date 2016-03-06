@@ -1,5 +1,5 @@
 
-#include "swd.h"
+#include "swd/swd.h"
 
 SYSTEM_MODE(MANUAL);
 
