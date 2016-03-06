@@ -30,7 +30,7 @@ Each connection is between a pin on the programmer and the corresponding pin on 
  - D6
  - D7
 
-Finally, a 10K resistor is required (brown, black, orange colors). This is connected between D7 on the target device and 3V3.
+Finally, a 10K resistor is required (brown, black, orange colors). This is connected between D7 on the programmer device and 3V3.
 
 The fritzing digram shows how it should look after assembly
 
