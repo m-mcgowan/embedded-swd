@@ -42,16 +42,16 @@ The next step is to flash the programmer app to the programmer device. (Recall t
 
 The simplest way is to use the Particle WebIDE:
 
-- click the libraries drawer
-- type "SWD" into the search field, click "SWD" when it appears in the list below
-- click on the "Norwegian Blue" example
-- click "Use this example"
+- Click the libraries drawer
+- Type "SWD" into the search field, click "SWD" when it appears in the list below
+- Click on the "Norwegian Blue" example
+- Click "Use this example"
 - Click "Flash" to flash the example to your device
  
-(In future the application binary will also be availalbe for download from this repo.)
+Alternatively, you can download the latest release for your programmer device from the [Releases](./releases) page on GitHub. 
 
-Once the app has been flashed, the device will breathe white. 
-
+Once the app has been flashed, the device will breathe white - it doesn't connect to the cloud or use Wi-Fi. 
+ 
 ### Using the Programmer App
 
 - Open a serial terminal to the device.
@@ -59,7 +59,7 @@ Once the app has been flashed, the device will breathe white.
 - Read the messages that appear. 
 - If you're sure you want to continue flashing the target device, type `Y` and press return.
 - Follow the on-screen prompts.
-- Once flashing is complete, your target device should be showing signs of life. 
+- Once flashing is complete, your target device should be showing signs of life via the main LED!
 
 
 
