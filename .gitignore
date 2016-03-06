@@ -26,3 +26,6 @@
 *.exe
 *.out
 *.app
+.cproject
+.project
+dist
