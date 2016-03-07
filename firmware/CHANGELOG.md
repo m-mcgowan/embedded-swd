@@ -1,4 +1,8 @@
 
+# 0.1.4
+
+- reintroduced swd.cpp for Particle Build library import
+
 # 0.1.3
 
 ## Bugfixes
