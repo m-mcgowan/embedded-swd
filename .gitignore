@@ -29,3 +29,5 @@
 .cproject
 .project
 dist
+firmware/examples/target
+firmware/target

@@ -1,6 +1,9 @@
+#ifdef PARTICLE_LOCAL_BUILD
+#include "swd.h"
+#else
 #pragma SPARK_NO_PREPROCESSOR
 #include "swd/swd.h"
-
+#endif
 SYSTEM_MODE(MANUAL);
 
 extern const uint8_t bootloader_platform_6_bin[];
@@ -45,6 +48,8 @@ public:
 
 	void setup()
 	{
+		RGB.control(true);
+		RGB.color(0,0,255);
 		while (!Serial.available()) {}
 		Serial.read();
 	}
@@ -105,10 +110,10 @@ public:
 		out.println("WARNING^2: Please read the message above!");
 		out.println();
 
-		//const char* opts[2] = ;
-		if (option("Do you have a dead device and wish to continue?", { "y", "N" }, 1)==0)
+
+		for (;;)
 		{
-			for (;;)
+			if (option("Do you have a dead device and wish to continue?", { "y", "N" }, 1)==0)
 			{
 				SWDResult error = startFlash();
 				if (failed(error))
@@ -120,6 +125,8 @@ public:
 					break;
 				}
 			}
+			else
+				break;
 		}
 		for (;;) { advancedMenu(); }
 	}
@@ -137,6 +144,7 @@ public:
 
 	SWDResult startFlash()
 	{
+		RGB.color(255,64,0);
 		CHECK_SUCCESS(doDetectDevice());
 		uint16_t platformID;
 		CHECK_SUCCESS(readPlatformID(platformID));
@@ -174,8 +182,12 @@ public:
 			out.printlnf("Gotcha...let's rock this! Flashing %s bootloader...", bootloaders[idx].name);
 			CHECK_SUCCESS(flashPlatform(bootloaders[idx]));
 			out.println("Aw yeah! Device successfully flashed. You should now see some LED activity on the device!");
+			RGB.color(0,255,0);
 		}
-
+		else
+		{
+			RGB.color(0,0,255);
+		}
 		return SWDResult::Ok;
 	}
 
