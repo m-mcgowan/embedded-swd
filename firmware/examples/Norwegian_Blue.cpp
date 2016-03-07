@@ -30,8 +30,8 @@ class Fixit
 
 	const PlatformBootloader bootloaders[3] = {
 			{ 6, "a","Photon", bootloader_platform_6_bin, bootloader_platform_6_bin_len },
-			{ 8, "a", "P1", bootloader_platform_6_bin, bootloader_platform_8_bin_len },
-			{ 10, "an", "Electron", bootloader_platform_6_bin, bootloader_platform_10_bin_len }
+			{ 8, "a", "P1", bootloader_platform_8_bin, bootloader_platform_8_bin_len },
+			{ 10, "an", "Electron", bootloader_platform_10_bin, bootloader_platform_10_bin_len }
 	};
 	const int8_t platform_count = arraySize(bootloaders);
 
