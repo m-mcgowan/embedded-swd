@@ -51,7 +51,7 @@ public:
 		RGB.control(true);
 		RGB.color(0,0,255);
 		while (!Serial.available()) {}
-		Serial.read();
+		while (Serial.available()) Serial.read();
 	}
 
 	uint8_t option(const char* msg, std::initializer_list<const char*> opts, int def=-1, bool listOpts=true)

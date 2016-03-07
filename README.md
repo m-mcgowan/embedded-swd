@@ -50,7 +50,7 @@ The simplest way is to use the Particle WebIDE:
  
 Alternatively, you can download the latest release for your programmer device from the [Releases](https://github.com/m-mcgowan/embedded-swd/releases) page on GitHub. 
 
-Once the app has been flashed, the device will breathe white - it doesn't connect to the cloud or use Wi-Fi. 
+Once the app has been flashed, the device will show a steady blue LED. The device doesn't connect to the cloud or use Wi-Fi. 
  
 ### Using the Programmer App
 
@@ -59,7 +59,7 @@ Once the app has been flashed, the device will breathe white - it doesn't connec
 - Read the messages that appear. 
 - If you're sure you want to continue flashing the target device, type `Y` and press return.
 - Follow the on-screen prompts.
-- Once flashing is complete, your target device should be showing signs of life via the main LED!
+- Once flashing is complete, your target device should be showing signs of life via the main LED! The programmer LED turns green.
 
 
 

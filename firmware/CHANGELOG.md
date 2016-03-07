@@ -1,3 +1,11 @@
+
+# 0.1.3
+
+## Bugfixes
+
+- Consume all input after the initial keypress. (Fixes issue on Windows where the pressing enter sends CR+LF, but only one character was consumed.)
+
+
 # 0.1.2
 
 ## Features
