@@ -34,7 +34,7 @@ Finally, a 10K resistor is required (brown, black, orange colors). This is conne
 
 The fritzing digram shows how it should look after assembly
 
-![Reviving a Parrot](./Particle Programmer Diagram.png)
+![Reviving a Parrot](ParticleProgrammerDiagram.png)
 
 ### Setup the Programmer App
 
